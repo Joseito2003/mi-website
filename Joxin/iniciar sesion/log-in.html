@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iniciar Sesion - Unixin</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iniciar sesion en Unixin">
+    <link rel="icon" href="../src/extraterrestre 2.svg">
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles_log-in.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Merriweather&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+	<ul class="head">
+		<li><img src="../src/extraterrestre 2.svg" class="main-icon"></li>
+		<li><h1 id="title">Unixin</h1></li>
+	</ul>
+
+
+	<form class="login-form">
+		<fieldset>
+			<h2 class="form-title">Iniciar Sesion</h2>
+			<div class="data-container">
+				<label class="label">
+					<h3 class="label-title">Correo electronico</h3>
+					<input type="email" name="email" placeholder="fulanodetal@gmail.com" class="form-input">
+					<!-- <hr class="focus-off focus-on"> -->
+				</label>
+				<label class="label">
+					<h3 class="label-title" id="change">Contraseña</h3>
+					<input type="password" name="password" placeholder="" class="form-input input-2" id="color">
+					<!-- <hr class="focus-off-2 focus-on-2"> -->
+				</label>
+
+				<a href="#" class="forgot-psswrd" id="forgot">¿Olvidaste tu contraseña?</a>
+				<a href="#" class="login-button" id="button" onclick='document.getElementById("title").innerHTML = titulo;'>Ingresar</a>
+			</div>
+
+		
+		</fieldset>
+	</form>
+
+
+
+	<script>var titulo = "Titulo Cambiado"</script>
+	<script type="text/javascript" src="./forms.js"></script>
+</body>
+
+
+
+
+
+
+
+</html>
