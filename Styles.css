@@ -90,7 +90,7 @@ input::selection{
 .head__cont2{
 	display: inline-flex;
 	position: relative;
-	margin-bottom: 2px;
+	margin-bottom: 10px;
 	width: 57vw;
 	top: 10px;
 	height: 40px;
@@ -115,8 +115,6 @@ input::selection{
 	width: 100%;
 	height: 40px;
 	background-color: darkred;
-	/*border: 2px solid white;*/
-	border: none;
 	font-size: 23px;
 	color: white;
 	font-family: quicksand, verdana;
@@ -124,7 +122,7 @@ input::selection{
 	padding-left: 20px;
 	box-shadow: 0 0 5px black;
 	transition: background-color .3s, box-shadow .3s, transform .5s, border .3s;
-	border: 1px solid #262626;
+	border: none;
 }
 .input-galaxy{
 	background-color: #262626;
@@ -135,7 +133,7 @@ input::selection{
 }
 .input-search:focus{
 	outline: none;
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 	box-shadow: 0 10px 26px #6a2991;
 	/*transform: translateY(-15%);*/
 	background-color: #282C4D;
@@ -481,6 +479,12 @@ input::selection{
 aside.news-movs-section {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	height: auto; 
+	margin: 30px 0; 
+	padding: 20px 0;
+	background-color: #281C4D;
+	box-shadow: 0 0 10px black; 
 }
 .news-movs-title{
 	font-size: 35px;
@@ -497,14 +501,6 @@ aside.news-movs-section {
 	border-radius: 50%;
 	box-shadow: 0 0 6px white;
 }
- .news-movs-section{
-	width: 100%;
-	height: auto; 
-	margin: 30px 0; 
-	padding: 20px 0;
-	background-color: #281C4D;
-	box-shadow: 0 0 10px black; 
-} 
 .news-movs{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(160px, 170px));
@@ -736,6 +732,8 @@ aside.news-movs-section {
 		transform: translate(0);
 	}
 }
+
+
 
 
 
