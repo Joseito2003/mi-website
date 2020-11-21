@@ -111,13 +111,6 @@ input::selection{
 	margin-left: 0;
 	cursor: default;
 }
-.icon-search{    
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	top: -5px;
-	left: -60px;
-}
 .input-search{
 	width: 100%;
 	height: 40px;
@@ -377,7 +370,7 @@ input::selection{
 	/*min-width: 20vw;
 	max-width: 90vw;*/
 	width: 20vw;
-	height: 100%;
+	height: 100vh;
 	/*border-right: 2px solid white;  */
 	position: fixed;
 	top: 0;
@@ -485,12 +478,34 @@ input::selection{
 
 /*------MAIN------*/ /*------MAIN------*/ /*------MAIN------*/ /*------MAIN------*/ /*------MAIN------*/ /*------MAIN------*/ 
 
- .news-movs{
+aside.news-movs-section {
+	display: flex;
+	flex-direction: column;
+}
+.news-movs-title{
+	font-size: 35px;
+	font-family: quicksand, verdana, sans-serif;
+	color: white;
+	text-align: center;
+}
+.hr-news-movs{
+	border: none;
+	background-color: white;
+	width: 80vw;
+	height: 3px;
+	margin: 20px auto;
+	border-radius: 50%;
+	box-shadow: 0 0 6px white;
+}
+ .news-movs-section{
 	width: 100%;
 	height: auto; 
 	margin: 30px 0; 
 	padding: 20px 0;
 	background-color: #281C4D;
+	box-shadow: 0 0 10px black; 
+} 
+.news-movs{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(160px, 170px));
 	grid-auto-rows: 270px;
@@ -498,9 +513,7 @@ input::selection{
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	box-shadow: 0 0 10px black; 
-} 
-
+}
 .main{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
@@ -681,8 +694,8 @@ input::selection{
 	.main{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(40%, 45%));
-	grid-auto-rows: 200px;
-	grid-gap: 20px;
+	grid-auto-rows: 240px;
+	grid-gap: 25px;
 	margin: 30px 40px;
 	justify-content: center;
 	}
@@ -705,6 +718,12 @@ input::selection{
 	.input-search{
 		font-size: 19px;
 	}
+	.news-movs-title{
+		font-size: 30px;
+	}
+	.menu{
+		width: 50vw;
+	}
 }
 @media screen and (max-width: 890px){
 	.options__item a{
@@ -712,6 +731,9 @@ input::selection{
 	}
 	.menu{
 		width: 43vw;
+	}
+	.img-mov{
+		transform: translate(0);
 	}
 }
 
